@@ -144,4 +144,79 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+    font-size: 1.2rem;
+    width: 100%;
+  }
 
+  main {
+    flex-direction: column;
+    margin: 6rem 2rem;
+    width: 100%;
+
+    .design-photo {
+      max-width: 100%;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    article {
+      padding: 4rem 3rem 2rem 3rem;
+
+      .content__title {
+        font-size: 1.5rem;
+      }
+      .content__text {
+        margin-bottom: 1rem;
+      }
+
+      .author {
+        .author__avatar {
+          height: 3.5rem;
+        }
+
+        .author__share-button {
+          padding: 0.8rem 0.8rem;
+          .author__share-button-img {
+            height: 1rem;
+          }
+        }
+
+        &.is-clicked {
+          display: none;
+        }
+      }
+    }
+
+    .share-window {
+      &.is-clicked {
+        justify-content: space-between;
+        gap: 1rem;
+        left: 0%;
+        right: 0%;
+        bottom: -12%;
+        max-width: 100%;
+        padding: 2rem 3rem;
+        border-radius: 0 0 1rem 1rem;
+
+        .share-window__icons {
+          flex: 0;
+          gap: 0.5rem;
+        }
+
+        .share-window__share-button {
+          display: flex;
+          border: none;
+          border-radius: 50%;
+          padding: 0.8rem 0.8rem;
+          background: var(--color-blue);
+
+          > img {
+            height: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
