@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --color-dark-blue: hsl(217, 19%, 35%);
+  --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --color-blue: hsl(212, 23%, 69%);
+  --color-light-blue: hsl(210, 46%, 95%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 13px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-light-blue);
+  height: 100vh;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  background: var(--color-white);
+  width: 70%;
+  position: relative;
+  border-radius: 1rem;
+
+  .design-photo {
+    max-width: 40%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 6rem 4rem 5rem;
+    gap: 2rem;
+    color: var(--color-dark-blue);
+    position: relative;
+
+    .content__title {
+      font-size: 2.5rem;
+    }
+
+    .content__text {
+      color: var(--color-desaturated-dark-blue);
+    }
+
+    .author {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      /* padding: 4rem 6rem 4rem 5rem; */
+
+      .author__avatar {
+        height: 4.5rem;
+        border-radius: 50%;
+      }
+
+      .author__publish-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .author__name {
+          font-weight: 700;
+        }
+
+        .author__date {
+          color: var(--color-blue);
+        }
+      }
+
+      .author__share-button {
+        border: none;
+        border-radius: 50%;
+        padding: 1rem 1rem;
+        background: var(--color-light-blue);
+
+        &.is-clicked {
+          background: var(--color-dark-blue);
+
+          > img {
+            filter: brightness(0) invert(1);
+          }
+        }
+
+        .author__share-button-img {
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+  
+  .share-window {
+    display: none;
+
+    &.is-clicked {
+      position: absolute;
+    }
+  }
+}
