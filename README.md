@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](image.png)
+![alt text](./images/image.png)
 
 ### Links
 
