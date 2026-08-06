@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/iviktorry/article-preview-component-master)
-- Live Site URL: [article-preview-component-master](https://iviktorry.github.io/article-preview-component-master/)
+- Live Site URL: [Site](https://article-preview-two-roan.vercel.app/)
 
 ## My process
 
@@ -43,4 +43,4 @@ Users should be able to:
 ## Author
 
 - GitHub - [iviktorry](https://github.com/iviktorry)
-- Frontend Mentor - [@iviktorry](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@iviktorry](https://www.frontendmentor.io/profile/iviktorry)
